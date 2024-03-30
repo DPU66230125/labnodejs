@@ -11,9 +11,9 @@ const options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Tummanoon's API",
+      title: "66230125 Tummanoon's API",
       version: "1.0.0",
-      description: "WE674 Lab Week10",
+      description: "WE674 Lab Week-10",
     },
   },
   apis: ["./routes/*.js"],

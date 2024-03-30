@@ -78,13 +78,6 @@ const blogs = [
     cover:
       "https://upload.wikimedia.org/wikipedia/commons/e/ec/Rangsiman_Rome_in_October_2023.png",
   },
-  {
-    id: 12,
-    title: "ทักษิณ ชินวัตร",
-    description: "ทักษิณ ชินวัตร (Tony Woodsome)",
-    cover:
-      "https://www.thebangkokinsight.com/wp-content/uploads/2024/02/%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B4%E0%B8%93-%E0%B8%AE%E0%B8%B8%E0%B8%99%E0%B9%80%E0%B8%8B%E0%B8%99-2126702.jpg",
-  },
 ];
 
 /**
