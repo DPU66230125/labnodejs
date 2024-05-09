@@ -3,80 +3,52 @@ const router = express.Router();
 const blogs = [
   {
     id: 1,
-    title: "นายอน (Nayeon) ชาวเกาหลี",
-    description: "อิม นายอน  (Im Nayeon) ",
+    title: "เศรษฐา ทวีสิน",
+    description: "นายกรัฐมนตรีไทย",
     cover:
-      "https://cms.dmpcdn.com/musicarticle/2020/10/08/9376de90-0940-11eb-b35d-299eb29d6529_original.jpg",
+      "https://media.cnn.com/api/v1/images/stellar/prod/230822132642-srettha-thavisin.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp",
   },
   {
     id: 2,
-    title: "จองยอน (Jeongyeon) ชาวเกาหลี",
-    description: "ยู จองยอน (Yoo Jeong-yeon)",
+    title: "รังสิมันต์ โรม",
+    description: "กมธ. ความมั่นคงแห่งราชอาณาจักร",
     cover:
-      "https://cms.dmpcdn.com/musicarticle/2020/10/08/921b4630-0940-11eb-b35d-299eb29d6529_original.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ec/Rangsiman_Rome_in_October_2023.png",
   },
   {
     id: 3,
-    title: "โมโมะ (Momo) ชาวญี่ปุ่น",
-    description: "ฮิราอิ โมโมะ (Hirai Momo)",
+    title: "ทักษิณ ชินวัตร",
+    description: "อดีตนายกรัฐมนตรีไทย",
     cover:
-      "https://cms.dmpcdn.com/musicarticle/2020/10/08/92fd1ab0-0940-11eb-8d0b-db22203d57e6_original.jpg",
+      "https://www.thebangkokinsight.com/wp-content/uploads/2024/02/%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B4%E0%B8%93-%E0%B8%AE%E0%B8%B8%E0%B8%99%E0%B9%80%E0%B8%8B%E0%B8%99-2126702.jpg",
   },
   {
     id: 4,
-    title: "ซานะ (Sana) ชาวญี่ปุ่น",
-    description: "มินาโตซากิ ซานะ (Minatozaki Sana)",
+    title: "พิธา ลิ้มเจริญรัตน์",
+    description: "นักธุรกิจและนักการเมืองชาวไทย",
     cover:
-      "https://cms.dmpcdn.com/musicarticle/2020/10/08/939cdd20-0940-11eb-8d0b-db22203d57e6_original.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/65/Pita_Limjaroenrat%2C_October_2023.jpg",
   },
   {
     id: 5,
-    title: "จีฮโย (Jihyo) ชาวเกาหลี",
-    description: "พัค จีฮโย (Park Ji hyo)",
+    title: "แพทองธาร ชินวัตร",
+    description: "นักธุรกิจและนักการเมืองชาวไทย",
     cover:
-      "https://cms.dmpcdn.com/musicarticle/2020/10/08/928133f0-0940-11eb-a3b0-f9d575a2517d_original.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Paetongtarn_Shinawatra%2C_Feb_13%2C_2024_01_%28cropped%29.jpg/220px-Paetongtarn_Shinawatra%2C_Feb_13%2C_2024_01_%28cropped%29.jpg",
   },
   {
     id: 6,
-    title: "มินะ (Mina) ชาวญี่ปุ่น",
-    description: "เมียวอิ มินะ (Myoui Mina)",
+    title: "ธรรมนัส พรหมเผ่า",
+    description: "นักการเมืองชาวไทย",
     cover:
-      "https://cms.dmpcdn.com/musicarticle/2020/10/08/92aa66d0-0940-11eb-8c17-5bb542a40882_original.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%99%E0%B8%B1%E0%B8%AA_%E0%B8%9E%E0%B8%A3%E0%B8%AB%E0%B8%A1%E0%B9%80%E0%B8%9C%E0%B9%88%E0%B8%B2_2020.jpg/220px-%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%99%E0%B8%B1%E0%B8%AA_%E0%B8%9E%E0%B8%A3%E0%B8%AB%E0%B8%A1%E0%B9%80%E0%B8%9C%E0%B9%88%E0%B8%B2_2020.jpg",
   },
   {
     id: 7,
-    title: "ดาฮยอน (Dahyun) ชาวเกาหลี",
-    description: "คิม ดาฮยอน (Kim Dahyun)",
+    title: "ศิริกัญญา ตันสกุล",
+    description: "นักการเมืองชาวไทย",
     cover:
-      "https://cms.dmpcdn.com/musicarticle/2020/10/08/91fe4850-0940-11eb-b35d-299eb29d6529_original.jpg",
-  },
-  {
-    id: 8,
-    title: "แชยอง (Chaeyoung) ชาวเกาหลี",
-    description: "ซน แชยอง (Son Chae Young)",
-    cover:
-      "https://cms.dmpcdn.com/musicarticle/2020/10/08/91891850-0940-11eb-a3b0-f9d575a2517d_original.jpg",
-  },
-  {
-    id: 9,
-    title: "จื่อวี (Tzuyu) ชาวไต้หวัน",
-    description: "โจว จื่อวี่ (Chou Tzu Yu)",
-    cover:
-      "https://cms.dmpcdn.com/musicarticle/2020/10/08/93f00630-0940-11eb-a3b0-f9d575a2517d_original.jpg",
-  },
-  {
-    id: 10,
-    title: "เศรษฐา ทวีสิน",
-    description: "เศรษฐา ทวีสิน (Srettha Thavisin)",
-    cover:
-      "https://upload.wikimedia.org/wikipedia/commons/2/22/PM_Kishida_meeting_with_PM_Thavisin_of_Thailand_%28cropped%29.jpg",
-  },
-  {
-    id: 11,
-    title: "รังสิมันต์ โรม",
-    description: "รังสิมันต์ โรม (Rangsiman Rome)",
-    cover:
-      "https://upload.wikimedia.org/wikipedia/commons/e/ec/Rangsiman_Rome_in_October_2023.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Sirikanya_Tansakun-2023-12-10.jpg/440px-Sirikanya_Tansakun-2023-12-10.jpg",
   },
 ];
 
